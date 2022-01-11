@@ -33,5 +33,5 @@ HTML, CSS, Bootstrap, Javscript, Node.js, MongoDB
 #### also the uploaded code is explained.
 #### Link: http://ikee.lib.auth.gr/record/335668/?ln=el
 
-### From this thesis, we published a paper in PCI (end of November 2021), which is focused on the game. The PDF of the paper is also uploaded. The conference is recent, 
+#### From this thesis, we published a paper in PCI (end of November 2021), which is focused on the game. The PDF of the paper is also uploaded. The conference is recent, 
 #### so the DOI is not ready yet.
