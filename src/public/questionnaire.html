@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./questionnaire.css" />
+
+    <title>FDI Game</title>
+  </head>
+  <body>
+    <div class="container" id="contain">
+      <div class="dropdown">
+         <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Leaderboard
+         <span class="caret"></span></button>
+         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" id="leaderboard">
+           <li role="presentation">
+             <div class="score" id="top1Score">First</div>
+           </li>
+           <li role="presentation">
+               <div class="score" id="top2Score">Second</div>
+           </li>
+           <li role="presentation">
+               <div class="score" id="top3Score">Third</div>
+           </li>
+           <li role="presentation">
+             <div class="score" id="top4Score">Fourth</div>
+           </li>
+           <li role="presentation">
+               <div class="score" id="top5Score">Fifth</div>
+           </li>
+           <hr>
+           <li role="presentation">
+               <div class="score" id="usersScoreNum">Your Score</div>
+           </li>
+         </ul>
+       </div>
+     </div>
+    <div id="wrapper">
+        <h1>Ευχαριστούμε πάρα πολύ για τη συμμετοχή σου. Το παιχνίδι αυτό είναι μέρος μια μελέτης που λαμβάνει χώρα στο πλαίσιο της πτυχιακής εργασίας του φοιτητή του Τμήματος Πληροφορικής ΑΠΘ 
+          <br/>
+          Αλέξανδρου Τρεμόπουλου.</h1>
+        <p>Συμπλήρωσε αυτό το ερωτηματολόγιο και έπειτα υπάρχει ένα ακόμη TEST που πρέπει να κάνεις για να τελειώσει η διαδικασία.</p>
+        
+        <form id="quiz">
+          <h2>Ηλικία</h2>
+          <input type="number" name="q1" id="age" value="0">
+          <br />
+
+          <h2>Φύλο</h2>
+          <label><input type="radio" name="q2" value="Άνδρας" >
+            Άνδρας
+          </label><br />
+          <label><input type="radio" name="q2" value="Γυναίκα">
+           Γυναίκα
+          </label><br />
+          <label><input type="radio" name="q2" value="Άλλο">
+            Άλλο
+          </label><br />
+
+          <h2>Έχεις ξαναπαίξει κάτι παρόμοιο;</h2>
+          <label><input type="radio" name="q3" value="ΝΑΙ" >
+            ΝΑΙ
+          </label><br />
+          <label><input type="radio" name="q3" value="ΟΧΙ">
+            ΟΧΙ
+          </label><br />
+          <label><input type="radio" name="q3" value="Δεν θυμάμαι">
+            Δεν θυμάμαι
+          </label><br />
+          
+          <h2>Πόσο σου άρεσε/δεν σου άρεσε η διαδικασία;</h2>
+          <label><input type="radio" name="q4" value="Δεν μου άρεσε καθόλου" >
+            Δεν μου άρεσε καθόλου
+          </label><br />
+          <label><input type="radio" name="q4" value="Δεν μου άρεσε">
+            Δεν μου άρεσε
+          </label><br />
+          <label><input type="radio" name="q4" value="Ούτε μου άρεσε, όυτε δεν μου άρεσε">
+            Ούτε μου άρεσε, όυτε δεν μου άρεσε
+          </label><br />
+          <label><input type="radio" name="q4" value="Μου άρεσε">
+            Μου άρεσε
+          </label><br />
+          <label><input type="radio" name="q4" value="Μου άρεσε πολύ">
+            Μου άρεσε πολύ
+        </label><br />
+          
+          <h2>Πόσο συχνά παίζεις ηλεκτρονικά παιχνίδια;</h2>
+          <label><input type="radio" name="q5" value="Ποτέ ή σχεδόν ποτέ" >
+            Ποτέ ή σχεδόν ποτέ
+          </label><br />
+          <label><input type="radio" name="q5" value="Μερικές φορές">
+            Μερικές φορές
+          </label><br />
+          <label><input type="radio" name="q5" value="Αρκετά  ή πολύ συχνά">
+            Αρκετά  ή πολύ συχνά
+          </label><br />
+
+          <h2>Πόσο συχνά παίζεις παιχνίδια τύπου παζλ;</h2>
+          <label><input type="radio" name="q6" value="Ποτέ ή σχεδόν ποτέ" >
+            Ποτέ ή σχεδόν ποτέ
+          </label><br />
+          <label><input type="radio" name="q6" value="Μερικές φορές">
+            Μερικές φορές
+          </label><br />
+          <label><input type="radio" name="q6" value="Αρκετά  ή πολύ συχνά">
+            Αρκετά  ή πολύ συχνά
+          </label><br />
+          
+          <button class="button" id="submit" onclick="fetchQuestions()">Υπέβαλε τις απαντήσεις σου</button>
+        </form>
+      </div>
+    <script type="text/javascript" src="./questionnaire.js" ></script>
+  </body>
+</html>

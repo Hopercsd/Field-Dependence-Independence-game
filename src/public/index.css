@@ -1,0 +1,39 @@
+body {
+    background-image: url("color.png");
+    background-color: #cccccc;
+    background-size: cover
+}
+
+.container {
+    margin-top: 10%;
+    margin-left: 35%;
+    width: 30%;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    border-radius: 0.3em;
+    background-color: #4B0082;
+    color: white;
+    font-size: 21px;
+    position: relative;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .button {
+    border: none;
+    color: #8A2BE2;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 21px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 0.4em;
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+  }
+
+  .button:hover{
+    background-color:#8A2BE2;
+    color:  white;
+  }

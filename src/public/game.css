@@ -1,0 +1,162 @@
+body {
+    background-image: url("color.png");
+    background-color: #cccccc;
+    background-size: cover
+}
+
+#flex{
+  margin-top: -2%;
+  overflow: hidden;
+}
+
+#firstDiv{
+  font-family: "Times New Roman", Times, serif;
+  float:right;
+  background-color: #4B0082;
+  color: white;
+  text-align: center;
+  border-radius: 0.3em;
+  font-size: 20px;
+  padding-left: 3px;
+  padding-right: 3px;
+  overflow: hidden;
+}
+
+#secDiv{
+  float:right;
+  background-color: #4B0082;
+  color: white;
+  text-align: center;
+  border-radius: 0.3em;
+  font-size: 20px;
+  padding-left: 3px;
+  padding-right: 3px;
+  overflow: hidden;
+  margin-left: 2px;
+  margin-right: 5%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#firstDiv2{
+  font-family: "Times New Roman", Times, serif;
+  float:right;
+  background-color: #4B0082;
+  color: white;
+  text-align: center;
+  border-radius: 0.3em;
+  font-size: 20px;
+  padding-left: 3px;
+  padding-right: 3px;
+  overflow: hidden;
+}
+
+#secDiv2{
+  float:right;
+  background-color: #4B0082;
+  color: white;
+  text-align: center;
+  border-radius: 0.3em;
+  font-size: 20px;
+  padding-left: 3px;
+  padding-right: 3px;
+  overflow: hidden;
+  margin-left: 2px;
+  margin-right: 5%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+p {
+    text-align: center;
+    font-size: 22px;
+    background-color: #4B0082;
+    color: white;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.3em;
+    padding-left: 3px;
+    padding-right: 3px;
+    line-height: 1.6;
+    padding: 10px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+#secPageEasy, #secPageNormal, #secPageHard{
+  display: none;
+  margin-top: -20px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 25px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 0.4em;
+    font-family: "Times New Roman", Times, serif;
+    box-shadow: 0 9px #999;
+    background-color: #8A2BE2;
+  }
+  .button:hover{
+    background-color:white;
+    color:  #8A2BE2;
+  }
+  
+  .button2 {
+    width: 123px;  
+    padding-left: 30px;
+    } 
+
+  .button4 {
+    background-color: #8A2BE2;
+    display: none;
+    font-size: 40px;
+    margin-bottom: 60px;
+    margin-top: 80px;
+  } 
+  .button4:hover {
+    background-color:white;
+    color:  #8A2BE2;
+  }
+
+  .container{
+    margin-top: 1%;
+    margin-left: 10%;
+  }
+
+  #menu1{
+    width: 300px;
+    background-color: #4B0082;
+    color:white;
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  #menu1:hover{
+    color:white;
+    background-color: #8A2BE2;
+  }
+  
+  .dropdown-menu{
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+    width: 300px;
+    background-color: #4B0082;
+    color: #4B0082;
+  }
+  
+  .name, .score{
+    background-color: #4B0082;
+    color: white;
+  }
+
+  #usersScoreNum, #top1Score, #top2Score, #top3Score, #top4Score, #top5Score{
+    white-space: pre;
+    font-size: 25px;
+  }

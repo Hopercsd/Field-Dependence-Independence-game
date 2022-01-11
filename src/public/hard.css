@@ -1,0 +1,119 @@
+body {
+    background-image: url("color.png");
+    background-color: #cccccc;
+    background-size: cover
+}
+
+#container
+{
+  height: 400px;
+  position: relative;
+  width: 400px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+    background-color: #4B0082;
+    color: white;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.3em;
+    padding-left: 3px;
+    padding-right: 3px;
+    line-height: 1.6;
+    margin-top: 60px;
+    padding: 10px;
+  }
+
+.button {
+    border: none;
+    color: white;
+    padding: 25px 42px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 0.4em;
+    font-family: "Times New Roman", Times, serif;
+    box-shadow: 0 9px #999;
+    background-color: #8A2BE2;
+  }
+  .button:hover{
+    background-color:white;
+    color:  #8A2BE2;
+  }
+  
+  .game-area{
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #SVG{
+    width: 500px;
+    height: 450px;
+    background-color: #E8E8E8;
+    border-radius: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .start{
+    margin-top: 35px;
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+
+  #start:hover {
+    background-color:white;
+    color:  #8A2BE2;
+  }
+
+#back{
+   display: none;
+   text-align: center;
+}
+  
+#left,#right,#down,#none,#up{
+  display: inline-block;
+  margin: 30px;
+}
+
+#two-btns{
+  text-align: center;
+  display: none;
+}
+
+#up-btn{
+  text-align: center;
+  display: none;
+}
+
+#down-btn{
+  text-align: center;
+  display: none;
+}
+
+#none-btn{
+  text-align: center;
+  display: none;
+  margin-bottom: 50px;
+  margin-left: 40em;
+}
+
+#rect3,#rect5, #rect6{
+  transform: rotate(45deg);
+}
+
+#elipse2, #elipse4 ,#triangle,#rect5, #rect2, #rect4, #circle2, #circle3, #triangle2, #elipse3, #triangle3, #circle4, #rect6,
+ #secElipse, #secCircle, #secTriangle, #secTriangle2, #secElipse2, #secCircle2, #secTriangle3, #secTriangle4, #secTriangle5, #secCircle3, #secElipse3, #secRect, #secTriangle6{
+  display: none;
+}

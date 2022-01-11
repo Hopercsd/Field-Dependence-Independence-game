@@ -1,0 +1,489 @@
+<html>
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>FDI Game</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <style>
+    .qBox {border: 1px solid #DDD;}
+    .vspace {margin: 20px;}
+    .fspace {margin: 100px;}
+    .fixed-top {background-color: #FFF; border-bottom: 4px solid #EEE}
+  </style>
+</head>
+
+
+<body>
+
+  <div class="container-fluid" id="cntSessionA">
+
+
+
+    <div class="row fixed-top">
+        <div class="col-md-3"><center>Ενότητα<br><h1>1</h1>από 2</center></div>
+        <div class="col-md-6"><center><img src="img/hft00.jpg" height="100px"></img></center></div>
+        <div class="col-md-3">
+          <center>Χρόνος που απομένει: <br><h3 id="time">12:00</h3></center>
+          <center>Aπαντήσεις που έχουν δοθεί: <br><span id="givenAnswers"><b>0</b></span>/<b>16</b></center>
+        </div>
+    </div>
+
+    <div class="row fspace"></div>
+
+    <!-- Row #1 -->
+    <div class="row">
+      <!-- Q 01 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>1</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft01.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ01">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ01" data-id="AGHUAPOD">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <!-- Q 02 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>2</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft02.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ02">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ02" data-id="BJUYFOIF">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Q 03 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>3</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft03.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ03">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ03" data-id="AIUFPQNB">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Q 04 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>4</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft04.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ04">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ04" data-id="EKJUDAA">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="row vspace"></div>
+
+    <!-- Row #2 -->
+    <div class="row">
+      <!-- Q 05 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>5</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft05.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ05">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ05" data-id="BJUASSA">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <!-- Q 06 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>6</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft06.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ06">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ06" data-id="CIUQAAD">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Q 07 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>7</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft07.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ07">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ07" data-id="DNHAJMDD">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Q 08 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>8</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft08.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ08">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ08" data-id="BBACXQA">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="row vspace"></div>
+
+    <!-- Row #3 -->
+    <div class="row">
+      <!-- Q 09 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>9</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft09.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ09">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ09" data-id="EKDISJAA">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <!-- Q 10 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>10</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft10.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ10">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ10" data-id="DPMZLLA">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Q 11 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>11</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft11.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ11">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ11" data-id="AUQQIAD">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Q 12 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>12</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft12.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ12">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ12" data-id="CZOAJQD">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+
+    <div class="row vspace"></div>
+
+
+    <!-- Row #4 -->
+    <div class="row">
+      <!-- Q 13 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>13</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft13.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ13">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ13" data-id="DOIAJDAA">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <!-- Q 14 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>14</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft14.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ14">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ14" data-id="EALKIFPO">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Q 15 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>15</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft15.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ15">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ15" data-id="CAKIUFJF">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Q 16 -->
+      <div class="col-md-3 qBox">
+          <div class="row">
+            <div class="col-md-12">
+              <center><h2>16</h2></center>
+            </div>
+            <div class="col-md-12">
+              <img src="img/hft16.jpg" width=100%></img>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <center><label for="selQ16">Απάντηση</label></center>
+                <select class="form-control selFormSessionA" id="selQ16" data-id="EOIFDJQJ">
+                  <option value="0" disabled selected>Επιλέξτε απάντηση</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                </select>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+
+    <div class="row vspace"></div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <center>
+          <div class="btn btn-primary" id="btnSubmitSessionA">Υποβολή απαντήσεων (Ενότητα 1)</div>
+        </center>
+      </div>
+    </div>
+
+    <div class="row vspace"></div>
+
+
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="hftA.js"></script>
+</body>
+
+
+</html>

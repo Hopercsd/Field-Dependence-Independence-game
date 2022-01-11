@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="./hard.css">
+
+    <title>FDI Game</title>
+  </head>
+  <body>
+    <div class="game-area">
+      <p id="text1">Κλίκαρε 'LEFT' ή 'RIGHT' ή 'DOWN' ή 'UP' με το ποντίκι αντίστοιχα, όταν εμφανιστούν ακριβώς τα ίδια σχήματα σαν αυτά που βλέπεις κάτω.</p>
+        <svg id="SVG">
+            <ellipse id="elipse" cx="250" cy="350" rx="100" ry="50"style="fill:gold;stroke:black;stroke-width:3" />
+            <rect id="rect" x="55" y="150" width="110" height="110" style="fill:#B22222;stroke-width:3;stroke:black" />
+            <circle id=circle cx="250" cy="85" r="75" stroke="black" stroke-width="4" fill="#4682B4" />
+            <rect id="rect3" x="350" y="-200" width="110" height="110" style="fill:red;stroke-width:3;stroke:black" />
+            <text id="text2" x="70" y="290" fill="black" font-size="2em">LEFT</text>
+            <text id="text3" x="340" y="290" fill="black" font-size="2em">RIGHT</text>
+            <text id="text4" x="205" y="440" fill="black" font-size="2em">DOWN</text>
+            <text id="text5" x="230" y="190" fill="black" font-size="2em">UP</text>
+            <ellipse id="elipse3" cx="250" cy="200" rx="200" ry="100"style="fill:gold;stroke:black;stroke-width:3" />
+            <rect id="rect2" x="162" y="112" width="175" height="175" style="fill:#B22222;stroke-width:3;stroke:black" />
+            <rect id="rect5" x="230" y="-120" width="175" height="175" style="fill:red;stroke-width:3;stroke:black" /> <!-- also phase 2 -->
+            <circle id=circle2 cx="250" cy="200" r="100" stroke="black" stroke-width="4" fill="#4682B4" />
+            <polygon id="triangle3" points="250,100 390,290 110,290" style="fill:purple;stroke:black;stroke-width:3" />
+            <ellipse id="elipse2" cx="250" cy="200" rx="200" ry="100"style="fill:#DAA520;stroke:black;stroke-width:3" />
+            <ellipse id="elipse4" cx="250" cy="200" rx="200" ry="100"style="fill:#B8860B;stroke:black;stroke-width:3" />
+            <rect id="rect6" x="230" y="-120" width="175" height="175" style="fill:#B22222;stroke-width:3;stroke:black" />
+            <circle id=circle3 cx="250" cy="200" r="100" stroke="black" stroke-width="4" fill="#191970" />
+            <circle id=circle4 cx="250" cy="200" r="100" stroke="black" stroke-width="4" fill="#87CEEB" />
+            <rect id="rect4" x="162" y="112" width="175" height="175" style="fill:red;stroke-width:3;stroke:black" />
+            <polygon id="triangle2" points="250,100 390,290 110,290" style="fill:pink;stroke:black;stroke-width:3" />
+            <polygon id="triangle" points="360,30 450,160 270,160" style="fill:purple;stroke:black;stroke-width:3" />
+            <!-- phase 2 -->
+            <ellipse id="secElipse" cx="250" cy="350" rx="100" ry="50"style="fill:#00FFFF;stroke:black;stroke-width:3" />
+            <polygon id="secTriangle" points="390,110 480,240 300,240" style="fill:yellow;stroke:black;stroke-width:3" />
+            <circle id=secCircle cx="250" cy="85" r="75" stroke="black" stroke-width="4" fill="#008B8B" />
+            <polygon id="secTriangle2" points="110,110 160,240 60,240" style="fill:red;stroke:black;stroke-width:3" />
+            <ellipse id="secElipse2" cx="250" cy="200" rx="200" ry="100"style="fill:#00FFFF;stroke:black;stroke-width:3" />
+            <circle id=secCircle2 cx="250" cy="200" r="100" stroke="black" stroke-width="4" fill="#008B8B" />
+            <polygon id="secTriangle3" points="250,100 390,290 110,290" style="fill:yellow;stroke:black;stroke-width:3" />
+            <polygon id="secTriangle4" points="250,100 340,290 160,290" style="fill:red;stroke:black;stroke-width:3" />
+            <polygon id="secTriangle5" points="250,100 390,290 110,290" style="fill:red;stroke:black;stroke-width:3" />
+            <circle id=secCircle3 cx="250" cy="200" r="100" stroke="black" stroke-width="4" fill="#191970" />
+            <ellipse id="secElipse3" cx="250" cy="200" rx="200" ry="100"style="fill:#191970;stroke:black;stroke-width:3" />
+            <rect id="secRect" x="162" y="112" width="175" height="175" style="fill:#00FFFF;stroke-width:3;stroke:black" />
+            <polygon id="secTriangle6" points="250,100 390,290 110,290" style="fill:#FFA500;stroke:black;stroke-width:3" />
+        </svg>
+    </div>
+    <div>
+      <button class="button start" id="start1">START</button>
+    </div>
+    <div id="up-btn">
+      <button class="button up" id="up">UP</button>
+    </div>
+    <div id="two-btns">
+      <button class="button left" id="left">LEFT</button>
+      <button class="button right" id="right">RIGHT</button>
+    </div>
+    <div id="down-btn">
+      <button class="button down" id="down">DOWN</button>
+    </div>
+    <div id="none-btn">
+        <button class="button up" id="none">NONE</button>
+    </div>
+    <div>
+        <button class="button back" id="back">GO BACK</button>
+      </div>
+    <script type="text/javascript" src="./hard.js"  onload="playHard()"></script>
+  </body>
+</html>

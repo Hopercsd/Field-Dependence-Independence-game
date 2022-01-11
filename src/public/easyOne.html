@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./easy.css" />
+
+    <title>FDI Game</title>
+  </head>
+  <body>
+    <div class="game-area">
+      <p id="text1">
+        Κλίκαρε 'LEFT' ή 'RIGHT' με το ποντίκι αντίστοιχα, όταν εμφανιστούν ακριβώς τα ίδια σχήματα σαν αυτά που βλέπεις κάτω. Τα κουμπιά 'UP'/'DOWN' εδώ δεν χρειάζονται.
+      </p>
+      <svg id="SVG">
+        <circle
+          id="circle"
+          cx="120"
+          cy="180"
+          r="60"
+          stroke="black"
+          stroke-width="4"
+          fill="yellow"
+        />
+        <rect
+          id="rect"
+          x="300"
+          y="130"
+          width="110"
+          height="110"
+          style="fill: rgb(0, 0, 255); stroke-width: 3; stroke: black"
+        />
+        <text id="text2" x="80" y="300" fill="black" font-size="2em">LEFT</text>
+        <text id="text3" x="310" y="300" fill="black" font-size="2em">
+          RIGHT
+        </text>
+        <ellipse
+          id="elipse"
+          cx="250"
+          cy="200"
+          rx="150"
+          ry="100"
+          style="fill: red; stroke: black; stroke-width: 3"
+        />
+        <ellipse
+          id="elipse2"
+          cx="250"
+          cy="200"
+          rx="150"
+          ry="75"
+          style="fill: purple; stroke: black; stroke-width: 3"
+        />
+        <circle
+          id="circle2"
+          cx="250"
+          cy="200"
+          r="100"
+          stroke="black"
+          stroke-width="4"
+          fill="yellow"
+        />
+        <rect
+          id="rect2"
+          x="162"
+          y="112"
+          width="175"
+          height="175"
+          style="fill: rgb(0, 0, 255); stroke-width: 3; stroke: black"
+        />
+        <polygon
+          id="triangle"
+          points="250,100 340,290 160,290"
+          style="fill: green; stroke: black; stroke-width: 3"
+        />
+        <rect
+          id="rect3"
+          x="230"
+          y="-120"
+          width="175"
+          height="175"
+          style="fill: brown; stroke-width: 3; stroke: black"
+        />
+        <circle
+          id="circle3"
+          cx="250"
+          cy="200"
+          r="100"
+          stroke="black"
+          stroke-width="4"
+          fill="#FF8C00"
+        />
+        <rect
+          id="rect4"
+          x="162"
+          y="112"
+          width="175"
+          height="175"
+          style="fill: cyan; stroke-width: 3; stroke: black"
+        />
+        <polygon
+          id="triangle2"
+          points="250,100 340,290 160,290"
+          style="fill: yellow; stroke: black; stroke-width: 3"
+        />
+        <rect id="rhombus" x="230" y="-120" width="175" height="175" style="fill:pink;stroke-width:3;stroke:black" />
+        <polygon
+          id="triangle3"
+          points="250,100 340,290 160,290"
+          style="fill: orangered; stroke: black; stroke-width: 3"
+        />
+        <!-- phase 2 -->
+        <ellipse
+          id="secElipse"
+          cx="120"
+          cy="180"
+          rx="75"
+          ry="50"
+          style="fill: navy; stroke: black; stroke-width: 3"
+        />
+        <polygon
+          id="secTriangle"
+          points="360,100 430,250 290,250"
+          style="fill: tomato; stroke: black; stroke-width: 3"
+        />
+        <ellipse
+          id="secElipse2"
+          cx="250"
+          cy="200"
+          rx="150"
+          ry="100"
+          style="fill: navy; stroke: black; stroke-width: 3"
+        />
+        <polygon
+          id="secTriangle2"
+          points="250,100 340,290 160,290"
+          style="fill: tomato; stroke: black; stroke-width: 3"
+        />
+        <circle
+          id="secCircle"
+          cx="250"
+          cy="200"
+          r="100"
+          stroke="black"
+          stroke-width="4"
+          fill="yellow"
+        />
+        <circle
+          id="secCircle2"
+          cx="250"
+          cy="200"
+          r="100"
+          stroke="black"
+          stroke-width="4"
+          fill="tomato"
+        />
+        <rect
+          id="secRect"
+          x="162"
+          y="112"
+          width="175"
+          height="175"
+          style="fill: navy; stroke-width: 3; stroke: black"
+        />
+        <polygon
+          id="secTriangle3"
+          points="250,100 340,290 160,290"
+          style="fill: red; stroke: black; stroke-width: 3"
+        />
+        <ellipse
+          id="secElipse3"
+          cx="250"
+          cy="200"
+          rx="150"
+          ry="100"
+          style="fill: #8a2be2; stroke: black; stroke-width: 3"
+        />
+        <ellipse
+          id="secElipse4"
+          cx="250"
+          cy="200"
+          rx="150"
+          ry="100"
+          style="fill: #87cefa; stroke: black; stroke-width: 3"
+        />
+        <rect id="secRhombus" x="230" y="-120" width="175" height="175" style="fill:#00FFFF;stroke-width:3;stroke:black" />
+        <rect
+          id="secRect2"
+          x="162"
+          y="112"
+          width="175"
+          height="175"
+          style="fill: #32CD32; stroke-width: 3; stroke: black"
+        />
+      </svg>
+    </div>
+    <div>
+      <button class="button start" id="start1">START</button>
+    </div>
+    <div id="up-btn">
+      <button class="button disabled" id="up">UP</button>
+    </div>
+    <div id="two-btns">
+      <button class="button left" id="left">LEFT</button>
+      <button class="button right" id="right">RIGHT</button>
+    </div>
+    <div id="down-btn">
+      <button class="button disabled" id="down">DOWN</button>
+    </div>
+    <div id="none-btn">
+        <button class="button up" id="none">NONE</button>
+    </div>
+    <div>
+      <button class="button back" id="back">GO BACK</button>
+    </div>
+    <script type="text/javascript" src="./easy.js" onload="playEasy()"></script>
+  </body>
+</html>

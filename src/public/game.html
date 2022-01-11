@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./game.css" />
+
+    <title>FDI Game</title>
+  </head>
+  <body>
+    <div class="container" id="contain">
+      <div class="dropdown">
+         <button class="btn dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Leaderboard
+         <span class="caret"></span></button>
+         <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" id="leaderboard">
+           <li role="presentation">
+             <div class="score" id="top1Score">First</div>
+           </li>
+           <li role="presentation">
+               <div class="score" id="top2Score">Second</div>
+           </li>
+           <li role="presentation">
+               <div class="score" id="top3Score">Third</div>
+           </li>
+           <li role="presentation">
+             <div class="score" id="top4Score">Fourth</div>
+           </li>
+           <li role="presentation">
+               <div class="score" id="top5Score">Fifth</div>
+           </li>
+           <hr>
+           <li role="presentation">
+               <div class="score" id="usersScoreNum">Your Score</div>
+           </li>
+         </ul>
+       </div>
+     </div>
+    <div class="flex-container" id="flex">
+      <div>
+        <div id="secDiv">
+          <h3 id="numScore">0</h3>
+        </div>
+        <div id="firstDiv">
+          <h3 id="score">Score:</h3>
+        </div>
+      </div>
+      <div>
+        <div id="secDiv2">
+          <h3 id="triesNum">4</h3>
+        </div>
+        <div id="firstDiv2">
+          <h3 id="triesText">Απομένουν Προσπάθειες:</h3>
+        </div>
+      </div>
+    </div>
+    <div id="rulesPhaseTwo">
+      <p id="firstPage">
+        Καλωσήρθες!
+        <br />
+        Αυτό είναι ένα παιχνίδι για να εξετάσει τις αντιδράσεις σου σε ξεχωριστά σχήματα.
+        <br />
+        <br />
+        Διαφορετικά σχήματα θα σου εμφανιστούν. Θα πρέπει να τα θυμάσαι μεταξύ άλλων σχημάτων.
+        <br />
+        <br />
+        Όσο πιο μεγάλη η δυσκολία, τόσο πιο περίπλοκο γίνεται, αλλά κερδίζεις παραπάνω πόντους.
+        <br />
+        <br />
+        Κάθε δυσκολία μπορεί να επιλεχθεί δύο φορές(το πολύ), αλλά μπορείς να παίξεις συνολικά μέχρι 4 φορές.
+        <br />
+        Άρα, οι επιλογές σου έχουν σημασία.
+        <br />
+        <br />
+        Σε κάθε δυσκολία, οι πόντοι σου πολλαπλασιάζονται:
+        <br />
+        Easy : x0.5
+        <br />
+        Normal: x1
+        <br />
+        Hard : x2
+      </p>
+      <br />
+      <button class="button button1" id="easy" onclick="easyMode()">
+        Easy
+      </button>
+      <button class="button button2" id="medium" onclick="medMode()">
+        Normal
+      </button>
+      <button class="button button3" id="hard" onclick="hardMode()">
+        Hard
+      </button>
+      <p id="secPageEasy">
+        Δύο σχήματα με χρώμα θα εμφανιστούν. Αποστήθισε τα και πάτα start όταν είσαι έτοιμος.
+        <br /> Πάρε όσο χρόνο χρείαζεσαι.
+        <br />
+        <br />Υπάρχουν δύο εκδοχές. Κάθε εκδοχή περιέχει 12 διαφορετικά σχήματα.
+        <br />
+        <br />
+        Ένα σχήμα τη φορά θα εμφανίζεται. Αν είναι κάποιο απο αυτά τα οποία έπρεπε να αποστηθίσεις, πάτα το αντίστοιχο κουμπί που του ανήκει, 
+        χρησιμοποιώντας το ποντίκι. Αν δεν είναι κάποιο από αυτά 'κλίκαρε' το κουμπί 'NONE'.
+        <br /><br />
+        Σχήμα ΚΑΙ χρώμα έχουν σημασία. Πρέπει να είναι ολόιδια.
+        <br />
+        Διαφορετικά σχήματα θα εμφανιστούν για αποστήθιση στις δύο εκδοχές.
+      </p>
+      <p id="secPageNormal">
+        Τρία σχήματα με χρώμα θα εμφανιστούν. Αποστήθισε τα και πάτα start όταν είσαι έτοιμος.
+        <br /> Πάρε όσο χρόνο χρείαζεσαι.
+        <br />
+        <br />
+        Υπάρχουν δύο εκδοχές. Κάθε εκδοχή περιέχει 12 διαφορετικά σχήματα.
+        <br />
+        <br />
+        Ένα σχήμα τη φορά θα εμφανίζεται. Αν είναι κάποιο απο αυτά τα οποία έπρεπε να αποστηθίσεις, πάτα το αντίστοιχο κουμπί που του ανήκει, 
+        χρησιμοποιώντας το ποντίκι. Αν δεν είναι κάποιο από αυτά 'κλίκαρε' το κουμπί 'NONE'.
+        <br /><br />
+        Σχήμα ΚΑΙ χρώμα έχουν σημασία. Πρέπει να είναι ολόιδια.
+        <br />
+        Διαφορετικά σχήματα θα εμφανιστούν για αποστήθιση στις δύο εκδοχές.
+      </p>
+      <p id="secPageHard">
+        Τέσσερα σχήματα με χρώμα θα εμφανιστούν. Αποστήθισε τα και πάτα start όταν είσαι έτοιμος.
+        <br /> Πάρε όσο χρόνο χρείαζεσαι.
+        <br />
+        <br />
+        Υπάρχουν δύο εκδοχές. Κάθε εκδοχή περιέχει 12 διαφορετικά σχήματα.
+        <br />
+        <br />
+        Ένα σχήμα τη φορά θα εμφανίζεται. Αν είναι κάποιο απο αυτά τα οποία έπρεπε να αποστηθίσεις, πάτα το αντίστοιχο κουμπί που του ανήκει, 
+        χρησιμοποιώντας το ποντίκι. Αν δεν είναι κάποιο από αυτά 'κλίκαρε' το κουμπί 'NONE'.
+        <br /><br />
+        Σχήμα ΚΑΙ χρώμα έχουν σημασία. Πρέπει να είναι ολόιδια.
+        <br />
+        Διαφορετικά σχήματα θα εμφανιστούν για αποστήθιση στις δύο εκδοχές.
+      </p>
+      <button class="button button4" id="play" onclick="play()">Play!</button>
+    </div>
+    <script type="text/javascript" src="./game.js" onload="getUser()"></script>
+  </body>
+</html>
+
+      <!--<p id="firstPage">
+        Welcome!
+        <br />
+        This is a game to test your reactions on different shapes.
+        <br />
+        <br />
+        Different shapes will be shown to you. You have to remember them,
+        between other shapes.
+        <br />
+        <br />
+        The harder the mode, the more compicated it gets, but you earn more
+        points.
+        <br />
+        <br />
+        Each mode can be played twice(max), but you can play only 4 times total. 
+        <br />
+        So, your choices matter.
+        <br />
+        <br />
+        In each mode, points get multiplied:
+        <br />
+        Easy : x0.5
+        <br />
+        Normal: x1
+        <br />
+        Hard : x2
+      </p>-->
+
+      <!--<p id="secPageEasy">
+        Two shapes with color will be shown to you. Memorize them and press
+        start when ready.
+        <br /> Take as much time as you want.
+        <br />
+        <br />
+        There are 2 versions. Each version contains 10 different shapes.
+        <br />
+        <br />
+        One shape at a time will be shown to you. If it is one of those you had
+        to memorize, press the correct button. If it is not, press the 'NONE'
+        button.
+        <br /><br />
+        Shape AND color matters.
+        <br />
+        Different shapes will be shown to you to memorize, in both versions.
+      </p>
+      <p id="secPageNormal">
+        Three shapes with color will be shown to you. Memorize them and press
+        start when ready.
+        <br /> Take as much time as you want.
+        <br />
+        <br />
+        There are 2 versions. Each version contains 10 different shapes.
+        <br />
+        <br />
+        One shape at a time will be shown to you. If it is one of those you had
+        to memorize, press the correct button. If it is not, press the 'NONE'
+        button.
+        <br /><br />
+        Shape AND color matters.
+        <br />
+        Different shapes will be shown to you to memorize, in both versions.
+      </p>
+      <p id="secPageHard">
+        Four shapes with color will be shown to you. Memorize them and press
+        start when ready.
+        <br /> Take as much time as you want.
+        <br />
+        <br />
+        There are 2 versions. Each version contains 12 different shapes.
+        <br />
+        <br />
+        One shape at a time will be shown to you. If it is one of those you had
+        to memorize, press the correct button. If it is not, press the 'NONE'
+        button.
+        <br /><br />
+        Shape AND color matters.
+        <br />
+        Different shapes will be shown to you to memorize, in both versions.
+      </p>-->
