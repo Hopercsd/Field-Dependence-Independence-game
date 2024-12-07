@@ -1,5 +1,5 @@
 # Field-Dependence-Independence-game
-In the context of my thesis, I hade to create a web puzzle game. 108 participants played it and whose data I used to analyze and predict 
+In the context of my bachelor thesis, I had to create a web puzzle game. 108 participants played it and whose data I used to analyze and predict 
 their Field Dependence-Independence Group
 
 ## Thesis Abstract
